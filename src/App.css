@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+video {
+  transform: scaleX(-1); 
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +43,34 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.notification {
+  position: fixed; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 1000; 
+  padding: 1em; 
+  background-color: #7a7a7a; 
+  color: #000000;
+  border-radius: 4px;
+  border: 1px solid #f2eff0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 1rem; 
+  line-height: 1.5; 
+  text-align: center; 
+  max-width: 300px;
+  animation: fadeOut 5.2s ease forwards; 
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
